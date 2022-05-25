@@ -1,0 +1,27 @@
+.card {
+    height: 340px;
+    flex-wrap: wrap;
+    width: 225px;
+    background-color: #664822;
+}
+.card-header {
+    height: 75px;
+    width: 100%;
+    background-color: #EAA64D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color : white;
+    font-family: 'Cairo',sans-serif;
+    font-weight: 800;
+    font-size: 12px;
+}
+.card-body {
+    text-align: center;
+    color : white;
+    font-family: 'Cairo',sans-serif;
+    font-size: 20px;
+}
+.card-body ul {
+    list-style-type: none;
+}

@@ -1,0 +1,7 @@
+.card-body-container {
+    display: flex;
+    gap : 10px;
+    justify-content: center;
+    margin-bottom : 10px;
+    transform: scale(85%);
+}
