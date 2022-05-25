@@ -14,8 +14,9 @@ const MainBody = ()=> {
     return (
     <div className = "root-container">
         <div className = "link-bg">
-            <div style = {{height:"20px",width:"20px",backgroundColor:"red"}}></div>
-            <div style = {{height:"20px",width:"20px",backgroundColor:"red"}}></div>
+            <div className = "link-item"></div>
+            <div className = "link-item"></div>
+
 
         </div>
         <div className = "body-container">
@@ -31,7 +32,7 @@ const MainBody = ()=> {
                     <div className= "profile-container">
                         <img src = {BackgroundSvg} alt = "something went wrong" className = "profile-img-background"/>
                         <div className = "profile-image-name-bundle">
-                            <div style = {{textAlign:"right"}}>
+                            <div className = "profile-name-text">
                                 <h1>Md Masud karim</h1>
                                 <span style = {{display:"flex",gap:"15px",float:"right",alignItems:"center"}}>
                                     <img src = {iconCoffe} alt = "something went wrong" className= "coffe-icon"/>

@@ -25,3 +25,10 @@
 .card-body ul {
     list-style-type: none;
 }
+
+@media screen and (min-width : 400px) {
+    .card {
+        width: 375px;
+        height: 400px;
+    }
+}
