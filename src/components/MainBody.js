@@ -1,25 +1,36 @@
 import React from "react";
-// import "./MainBody.css";
 import "./MainBody.scss";
 
-import BackgroundSvg from "../asset/svg/Path 1.svg";
-import upworkIcon from "../asset/svg/Group 19.svg";
-import iconCoffe from "../asset/svg/coffe.svg";
-
-
-import profileImg from "../asset/image/profile.jpg";
 import CardBody from "./CardBody";
 import AboutMePart from "./parts/AboutMePart";
 import ProfileContainerPart from "./parts/ProfileContainerPart";
+
+import { BrowserRouter as Router,
+    Link,
+    Route,
+    Routes,
+    Switch } from "react-router-dom";
+import RepositoryBody from "./parts/RepositoryBody";
+
+import fbIcon from "../asset/svg/fb.svg";
+import githubIcon from "../asset/svg/github.svg";
+import linkedinIcon from "../asset/svg/linkedin.svg";
+import twitterIcon from "../asset/svg/twitter.svg";
+
+import { motion } from "framer-motion";
+
 
 const MainBody = ()=> {
     return (
     <div className = "root-container">
 
-        <div className = "root-container__link-bg">
-            <div className = "root-container__link-bg__link-item"></div>
-            <div className = "root-container__link-bg__link-item"></div>
-        </div>
+        <motion.div animate={{ x: [-100, 0] }} transition = {{duration:1.2}} className = "root-container__link-bg">
+            <img src = {fbIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
+            <img src = {githubIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
+            <img src = {linkedinIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
+            <img src = {twitterIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
+
+        </motion.div>
 
         <div className = "root-container__body-container">
 
@@ -28,7 +39,14 @@ const MainBody = ()=> {
                 <ProfileContainerPart/>
             </div>
 
-            <CardBody/>
+            <Router>
+                
+
+                <Routes>
+                    <Route path = "/" element = {<CardBody/>}/>
+                    <Route path = "/repositories" element = {<RepositoryBody/>}/>
+                </Routes>
+            </Router>
 
         </div>
         

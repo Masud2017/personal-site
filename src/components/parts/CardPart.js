@@ -1,10 +1,11 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 import "./CardPart.scss";
 
 const CardPart = (props)=> {
     return (
-        <div className = "card">
+        <motion.div transition = {{duration:1.2}}  animate={{ x: [-1900, 700,0] }} className = "card">
             <div className ="card__card-header">
                 <h1>{props.props.heading}</h1>
             </div>
@@ -14,7 +15,7 @@ const CardPart = (props)=> {
                 </ul>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
 

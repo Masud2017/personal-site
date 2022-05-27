@@ -3,6 +3,8 @@
     flex-wrap: wrap;
     width: 225px;
     background-color: #664822;
+    box-shadow: 1.9px 2px 10px 0.5px #000000;
+    transition: box-shadow .3s;
 
     &__card-header {
         height: 75px;
@@ -24,6 +26,10 @@
     }
     &__card-body ul {
         list-style-type: none;
+    }
+
+    &:hover {
+        box-shadow: 1.9px 2.5px 15px 0.5px #000000;
     }
 }
 

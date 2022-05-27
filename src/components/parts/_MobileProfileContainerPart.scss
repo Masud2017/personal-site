@@ -1,0 +1,36 @@
+@media screen and (max-width :400px) {
+    .profile-container {
+        /* display: inline-block; */
+        width : 100vw;
+        display: flex;
+        justify-content: center;
+        
+        &__profile-aboutme-container {
+            display: flex;
+            flex-direction: column-reverse;
+            // /* align-items: center; */
+        }
+       
+        
+        
+    
+        &__profile-img-background {
+            display: none; 
+        }
+        &__profile-image-name-bundle {
+            background-color: red;
+            transform: translate(-90%);
+            display: flex;
+            flex-direction: column-reverse;
+            width: 100%;
+            height: 100%;
+
+        }
+        &__profile-name-text {
+            text-align: center;
+        }
+        
+    }
+
+
+}
