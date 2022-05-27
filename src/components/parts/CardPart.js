@@ -1,14 +1,14 @@
 import React from "react";
 
-import "./CardPart.css";
+import "./CardPart.scss";
 
 const CardPart = (props)=> {
     return (
         <div className = "card">
-            <div className ="card-header">
+            <div className ="card__card-header">
                 <h1>{props.props.heading}</h1>
             </div>
-            <div className = "card-body">
+            <div className = "card__card-body">
                 <ul>
                     {props.props.itemlist.map((item)=>(<li>{item}</li>))}
                 </ul>

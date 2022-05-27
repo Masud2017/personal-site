@@ -1,0 +1,96 @@
+.profile-container {
+    position: relative;
+    flex-grow: 2;
+    flex-basis: 200px;    
+
+    &__profile-img-background {
+        width: 100%;
+        height: 100%;    
+    }
+
+    &__profile-image-name-bundle {
+        position: absolute;
+        top: 0;
+        right:0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        /* line-height: 65px; */
+        line-height: 4vw;
+        padding : 10px;
+        transform: scale(75%);
+
+        &__profile-image {
+            /* width: 200px;
+            height: 200x; */
+            width: 12vw;
+            height: 12vw;
+            border-radius: 50%;
+            border: 5px solid white;
+           
+        }
+
+        &__upwork-icon {
+            height: 2vw;
+            width: 2vw;
+        }
+
+        &__coffe-icon {
+            width: 2.7vw;
+            height: 2.7vw;
+        }
+        
+
+        &__hireme-btn {
+            padding : 3px;
+            /* width : 200px; */
+            /* height: 65px; */
+            width: 15vw;
+            height: 4vw;
+            background-color: #E68707;
+            border:none;
+            border-radius: 5px;
+            /* font-size: 35px; */
+            font-size: 2vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            position: absolute;
+            /* right : 230px; */
+            right : 15vw;
+            /* bottom : -50px; */
+            bottom: -4vw;
+            
+            transition: background-color .2s;
+            color : white;
+            font-family: 'Cairo', sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        &__hireme-btn:hover {
+            background-color: #B36705;
+        }
+        &__hireme-btn:active{
+            background-color: #c77c1b;
+        }
+        
+    }
+
+    &__profile-image-name-bundle h1 {
+        /* font-size: 70px; */
+        font-size: 4vw;
+        color : white;
+        font-family: 'Cairo', sans-serif;
+        font-weight: bold;
+    }
+    &__profile-image-name-bundle p {
+        /* font-size: 35px; */
+        font-size: 2vw;
+        color : white;
+        font-family: 'Cairo', sans-serif;
+    }
+
+
+    
+}

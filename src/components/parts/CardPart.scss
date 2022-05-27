@@ -1,0 +1,35 @@
+.card {
+    height: 340px;
+    flex-wrap: wrap;
+    width: 225px;
+    background-color: #664822;
+
+    &__card-header {
+        height: 75px;
+        width: 100%;
+        background-color: #EAA64D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color : white;
+        font-family: 'Cairo',sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+    }
+    &__card-body {
+        text-align: center;
+        color : white;
+        font-family: 'Cairo',sans-serif;
+        font-size: 20px;
+    }
+    &__card-body ul {
+        list-style-type: none;
+    }
+}
+
+@media screen and (min-width : 400px) {
+    .card {
+        width: 375px;
+        height: 400px;
+    }
+}

@@ -1,0 +1,29 @@
+.aboutme {
+    padding : 15px;
+    position: relative;
+    flex-grow: 1;
+    flex-basis: 200px;
+    /* transform: scale(85%); */
+
+
+
+    &__heading {
+        display: inline-block;
+        border-bottom: 10px solid white;
+        color : white;
+        font-family: 'Cairo',sans-serif;
+        /* font-size: 44px; */
+        font-size: 3vw;
+        box-sizing: border-box;    
+        /* line-height: 55px; */
+        line-height: 4vw;
+    }
+    &__description {
+        color : white;
+        font-family: 'Cairo',sans-serif;
+        /* font-size: 22px; */
+        font-size: 1.5vw;
+        /* line-height: 40px; */
+        line-height: 2.5vw;
+    }
+}

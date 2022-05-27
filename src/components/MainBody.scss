@@ -1,0 +1,132 @@
+/*
+    Coinverting the css files into scss file and also implementing the BEM architedcture.
+*/
+
+* {
+    margin: 0px;
+    padding : 0px;
+}
+
+body {
+    background-color: #E68707;
+
+    .root-container {
+        display: flex;
+        flex-direction: row;
+    
+        &__link-bg {
+            height: 100vh;
+            width: 4vw;
+            background-color: #664822;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            row-gap: 10px;
+
+            &__link-item {
+                height: 20px;
+                width: 20px;
+                background-color:red;
+            }
+            &__link-item:hover {
+                width: 200px;
+            }
+        }
+        
+        
+        &__body-container {
+            overflow-y: auto;
+            width: 96vw;
+            height: 100vh;
+            
+            &__profile-aboutme-container {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 400px){
+    .root-container {
+        /* display: flex;
+        flex-direction: column;
+        align-items: flex-start; */
+        display: inline-block;
+        margin: 0px;
+        padding : 0px;
+    }
+    .link-bg {
+        position: sticky;
+        top: 0px;
+        width : 100vw;
+        height: 6vw;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        z-index: 1;
+    }
+    .link-item:hover {
+        width: 20px;
+        height: 20px;
+    }
+    .profile-aboutme-container {
+        display: flex;
+        flex-direction: column-reverse;
+        /* align-items: center; */
+
+    }
+    .profile-container {
+        /* display: inline-block; */
+        width : 100vw;
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        
+    }
+    
+    
+    
+    /* .profile-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image-name-bundle {
+        text-align: center;
+    } */
+
+    .profile-img-background {
+        display: none;
+    }
+    .profile-image-name-bundle {
+        transform: translate(-90%);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .profile-name-text {
+        text-align: center;
+    }
+    .aboutme {
+        text-align: center;
+    }
+    .aboutme h3 {
+        border-bottom: 3px solid;
+        font-size: 8vw;
+        line-height: 8vw;
+    }
+    .aboutme p {
+        font-size: 4vw;
+        margin-top: 15px;
+        line-height: 5vw;
+        text-align: center;
+    }
+
+}

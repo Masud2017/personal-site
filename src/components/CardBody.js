@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardBody.css";
+import "./CardBody.scss";
 import CardPart from "./parts/CardPart";
 
 const CardBody = ()=> {
