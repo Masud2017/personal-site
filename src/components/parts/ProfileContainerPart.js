@@ -27,7 +27,7 @@ const ProfileContainerPart = ()=> {
                                 <img src = {profileImg} alt = "something went wrong" className = "profile-container__profile-image-name-bundle__profile-image"/>
                                 
                                 
-                                <button className = "profile-container__profile-image-name-bundle__hireme-btn"><img className = "profile-container__profile-image-name-bundle__upwork-icon" src ={upworkIcon}  alt = "something went wrong"/>Hire Me</button>
+                                <a href= "https://www.upwork.com/freelancers/~01cc49697b73b81a8c" target = "_blank" className = "profile-container__profile-image-name-bundle__hireme-btn"><img className = "profile-container__profile-image-name-bundle__upwork-icon" src ={upworkIcon}  alt = "something went wrong"/>Hire Me</a>
 
                             </div>
                        </div>
