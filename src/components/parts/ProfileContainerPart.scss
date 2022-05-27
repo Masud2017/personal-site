@@ -1,11 +1,17 @@
 .profile-container {
     position: relative;
     flex-grow: 2;
-    flex-basis: 200px;    
+    flex-basis: 200px;
+    box-sizing: border-box;
+    
 
     &__profile-img-background {
-        width: 100%;
-        height: 100%;    
+        // width: cover;
+        // height: cover;   
+        display: inline-block;
+        height: 100%;
+        width: 100%; 
+        pointer-events: none;  
     }
 
     &__profile-image-name-bundle {
