@@ -25,10 +25,10 @@ const MainBody = ()=> {
     <div className = "root-container">
 
         <motion.div animate={{ x: [-100, 0] }} transition = {{duration:1.2}} className = "root-container__link-bg">
-            <img src = {fbIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
-            <img src = {githubIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
-            <img src = {linkedinIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
-            <img src = {twitterIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/>
+            <a href = "https://www.facebook.com/forbidden.masud/" target = "_blank"><img src = {fbIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/></a>
+            <a href =  "https://github.com/Masud2017" target= "_blank"><img src = {githubIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/></a>
+            <a href = "https://www.linkedin.com/in/md-masud-karim-1225b615b/" target = "_blank"><img src = {linkedinIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/></a>
+            <a href = "https://twitter.com/Masudka83207057" target = "_blank"><img src = {twitterIcon} alt = "something wentwrong" className = "root-container__link-bg__link-item"/></a>
 
         </motion.div>
 
