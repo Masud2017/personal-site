@@ -40,9 +40,14 @@
 
         &__coffe-icon {
             width: 2.7vw;
-            height: 2.7vw;
         }
         
+        &__mobile-name span {
+            display:flex;
+            gap:15px;
+            float:right;
+            align-items:center;
+        }
 
         &__hireme-btn {
             text-decoration: none;
@@ -58,8 +63,9 @@
             justify-content: center;
             gap: 7px;
             position: absolute;
-            right : 15vw;
-            bottom: -4vw;
+            right : 14vw;
+            bottom: 9vw;
+            transform: scale(70%);
             
             transition: background-color .2s;
             color : white;

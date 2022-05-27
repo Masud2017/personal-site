@@ -1,6 +1,37 @@
 @media screen and (max-width:400px) {
     .aboutme {
         text-align: center;
+
+        &__showcasetab {
+            transform: scale(170%) !important;
+            margin-top: 20vw !important;
+            
+            
+            & a {
+                color :white;
+                padding : 0px 10px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap : 1vw;
+                cursor : pointer;
+            }
+    
+            & a:hover {
+                background-color: #b67521;
+            }
+    
+            &__center {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &__icon {
+                    width: 3vw;
+                    height: 3vw;
+    
+                }
+            }
+        }
     }
     .aboutme h3 {
         border-bottom: 3px solid;
