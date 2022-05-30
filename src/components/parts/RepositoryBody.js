@@ -1,5 +1,7 @@
 import React from "react";
 
+import ProjectShowcaseTabWindowPart from "./ProjectShowcaseTabWindowPart";
+
 import "./RepositoryBody.scss";
 
 const RepositoryBody = ()=> {
