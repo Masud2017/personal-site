@@ -30,7 +30,7 @@ const ProfileContainerPart = ()=> {
                                 
 
                             </div>
-                            <a href= "https://www.upwork.com/freelancers/~01cc49697b73b81a8c" target = "_blank" className = "profile-container__profile-image-name-bundle__hireme-btn"><img className = "profile-container__profile-image-name-bundle__upwork-icon" src ={upworkIcon}  alt = "something went wrong"/>Hire Me</a>
+                            <a href= "https://www.upwork.com/freelancers/~010ff2b8a4a7a47d08" target = "_blank" className = "profile-container__profile-image-name-bundle__hireme-btn"><img className = "profile-container__profile-image-name-bundle__upwork-icon" src ={upworkIcon}  alt = "something went wrong"/>Hire Me</a>
                        </div>
 
                     </motion.div>
